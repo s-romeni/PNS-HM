@@ -79,7 +79,7 @@ switch type
         end
 
     case 'FINE'
-        has_para = 0; %opt(1);
+        has_para = opt(1);
         a = opt(2);
         b = opt(3);
 

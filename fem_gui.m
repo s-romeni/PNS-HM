@@ -74,6 +74,8 @@ if strcmp(elec_type, 'FINE')
     else
         opt = [0, elec_params(1), elec_params(2)];
     end
+else
+    opt = [0, 0, 0];
 end
 
 list_modes = {'auto', 'custom circular', 'custom elliptical', 'custom polylinear'};
