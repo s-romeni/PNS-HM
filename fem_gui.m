@@ -233,7 +233,7 @@ for i = 1:length(which_as)
     idx = mphselectbox(model,'geom1',[p0',p1'],'domain');
     model.physics('ec').feature.create(strcat('cs1', num2str(i)), 'CurrentSource', 3);
     model.physics('ec').feature(strcat('cs1', num2str(i))).selection.set(idx);
-    model.physics('ec').feature(strcat('cs1', num2str(i))).set('Qj', curr(i), '1');
+    model.physics('ec').feature(strcat('cs1', num2str(i))).set('Qj', curr(i));
 end
 
 %% 8. Add and assign materials
